@@ -118,7 +118,7 @@ async function editData(object,moduleName) {
 					console.error(errorGlobal);
 					console.log(errorGlobal);
 			});		
-		var newlocalData = await self.getCovidLocal(object.zupanijaSelector,object.urlLocal,moduleName).then(function (localData) {
+		var newlocalData = await self.getCovidLocal(object.regionSelector,object.urlLocal,moduleName).then(function (localData) {
 					//console.log(moduleName +" localData: ",localData);
 				}, function (errorLocal) {
 					console.error(errorLocal);
